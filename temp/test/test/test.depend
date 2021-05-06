@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1620037840 source:d:\programavimas\cpp\pask\7sav\car.cpp
+	"Car.h"
+	<exception>
+	<stdexcept>
+	<sstream>
+	<chrono>
+	<iostream>
+
+1620037840 d:\programavimas\cpp\pask\7sav\car.h
+	<string>
+
+1620027481 source:d:\programavimas\cpp\pask\7sav\temp\test\test\main.cpp
+
+1620036971 source:d:\programavimas\cpp\pask\7sav\test.cpp
+	"doctest.h"
+	"Car.h"
+	<sstream>
+	<iostream>
+
+1617438902 d:\programavimas\cpp\pask\7sav\doctest.h
+	<signal.h>
+	<iosfwd>
+	<cstddef>
+	<ostream>
+	<ciso646>
+	<type_traits>
+	"doctest_fwd.h"
+	<ctime>
+	<cmath>
+	<climits>
+	<math.h>
+	<new>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<limits>
+	<utility>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<vector>
+	<atomic>
+	<mutex>
+	<set>
+	<map>
+	<exception>
+	<stdexcept>
+	<csignal>
+	<cfloat>
+	<cctype>
+	<cstdint>
+	<sys/types.h>
+	<unistd.h>
+	<sys/sysctl.h>
+	<AfxWin.h>
+	<windows.h>
+	<io.h>
+	<sys/time.h>
+	<unistd.h>
+

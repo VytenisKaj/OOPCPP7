@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1620034970 source:d:\programavimas\cpp\pask\7sav\car.cpp
+	"Car.h"
+	<exception>
+	<stdexcept>
+	<sstream>
+	<chrono>
+	<iostream>
+
+1620029823 d:\programavimas\cpp\pask\7sav\car.h
+	<string>
+
+1620032241 source:d:\programavimas\cpp\pask\7sav\main.cpp
+	<iostream>
+	"Car.h"
+
+1620024776 source:d:\programavimas\cpp\pask\7sav\temp\main\carmain\main.cpp
+

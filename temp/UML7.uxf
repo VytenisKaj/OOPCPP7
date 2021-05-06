@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>675</x>
+      <y>72</y>
+      <w>621</w>
+      <h>612</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;MyCar&gt;&gt;
+Car
+
+--
+-info: CarPrivate*
+_-instanceCount: static unsigned int_
+--
++Car()
++Car(manufacturer: const string&amp;, model: const string&amp;, manufactureYear: unsigned int, color: const string&amp;,
+         plate: const string&amp;, vin: const string&amp;, enginePower: unsigned int, weight: unsigned int)
++~Car()
++getColor(): string
++getVin(): string
++getPlate(): string
++getEnginePower(): unsigned int
++getWeight(): unsigned int
++getManufacturer(): string
++getModel(): string
++getManufactureYear(): unsigned int
++getID(): unsigned int
++setColor(color: const string&amp;): void
++setVin(vin: const string&amp;): void
++setPlate(plate: const string&amp;): void
++setEnginePower(enginePower: unsigned int): void
++setWeight(weigth: unsigned int): void
++setManufacturer(manufacturer: const string&amp;): void
++setModel(model: const string&amp;): void
++setManufactureYear(manufactureYear: unsigned int): void
++toString(): string
++operator=(object: const Car&amp;): void
++equals(object: const Car&amp;): bool
++upgradeEngine(value: unsigned int): void
++operator==(object: const Car&amp;): bool
++operator!=(object: const Car&amp;): bool
++operator&lt;(object: const Car&amp;): bool
++operator&lt;=(object: const Car&amp;): bool
++operator&gt;(object: const Car&amp;): bool
++operator&gt;=(object: const Car&amp;): bool
++operator++(): Car&amp;
++operator++(int): Car
++operator=(object: const Car&amp;): void
+&lt;&lt;friend&gt;&gt; operator&lt;&lt;(stream: ostream&amp;, object: const Car&amp;)
+&lt;&lt;friend&gt;&gt; operator&gt;&gt;(stream: istream&amp;, object: Car&amp;)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>369</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>279</y>
+      <w>414</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;MyCar&gt;&gt;
+CarChecker
+--
+_-possibleColors[COLOR_AMOUNT]: static const string_
+--
+_+checkColor(color: const string&amp;): bool_
+_+checkPlate(plate: const string&amp;): bool_
+_+checkenginePower(enginePower: unsigned int): bool_
+_+checkWeight(weight: unsigned int): bool_
+_+checkManufacturerYear(manufacturerYear: unsigned int): bool_
+_+checkInit(object: const Car&amp;, file: const string&amp;, line: int): void_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>387</x>
+      <y>36</y>
+      <w>189</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;MyCar&gt;&gt;
+Car::CarPrivate
+--
+-manufacturer: string
+-model: string
+-manufactureYear: unsigned int
+-color: string
+-plate: string
+-vin: string
+-enginePower: unsigned int
+-weight: unsigned int
+-fieldCount: unsigned int
+-objectID: unsigned int
+_-id: unsigned static int_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>261</x>
+      <y>504</y>
+      <w>234</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;MyCar&gt;&gt;
+incomplete_object
+--
+-msg: string
+--
++incomplete_object(msg: const string&amp;)
++what(): const char*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>369</x>
+      <y>441</y>
+      <w>27</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>126</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
